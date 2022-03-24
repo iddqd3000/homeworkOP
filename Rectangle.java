@@ -3,7 +3,9 @@ package com.company;
 public class Rectangle {
     private float length;
     private float width;
-
+    
+    
+    public Rectangle(){}
     public Rectangle(float length, float width){
         this.length = length;
         this.width = width;
