@@ -43,8 +43,8 @@ public class MyPoint {
                 ", y=" + y +
                 '}';
     }
-    public double distance(int x1, int y1){
-        double d = Math.sqrt((x1 - this.x)*(x1 - this.x)+ (y1-this.y)*(y1-this.y));
+    public double distance(int x, int y){
+        double d = Math.sqrt((x - this.x)*(x - this.x)+ (y-this.y)*(y-this.y));
         return d;
     }
     public double distance(){
