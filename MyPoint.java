@@ -47,6 +47,10 @@ public class MyPoint {
         double d = Math.sqrt((x - this.x)*(x - this.x)+ (y-this.y)*(y-this.y));
         return d;
     }
+     public double distance(MyPoint another){
+        double d = Math.sqrt((another.getX - this.x)*(another.getX - this.x)+ (another.getY-this.y)*(another.getY-this.y));
+        return d;
+    }
     public double distance(){
         double d = Math.sqrt((0 - this.x)*(0 - this.x)+ (0-this.y)*(0-this.y));
         return d;
