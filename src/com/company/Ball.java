@@ -98,17 +98,26 @@ class Container{
     public int getHeight(){
         return y2+y1;
     }
-     public boolean collides(Ball ball){
-        boolean abc = false;
-        if(ball.x - ball.radius > this.x1){
-            if(ball.x + ball.radius < this.x2){
-                if(ball.y - ball.radius > this.y1){
-                    if(ball.y + ball.radius < this.y2){
-                        abc = true;
-                    }
-                }
-            }
+     public int getX() {
+        return x1;
+    }
+
+    public int getY() {
+        return y1;
+    }
+    public int getWidth(){
+        return x2+x1;
+    }
+    public int getHeight(){
+        return y2+y1;
+    }
+    public boolean collides(Ball ball){
+        if(ball.x - ball.radius < this.x1 & ball.x + ball.radius > this.x2 & ball.y - ball.radius < this.y1 
+                & ball.y + ball.radius < this.y2){
+            return true;
         }
-        return abc;
+        else{
+            return false;
+        }
     }
 }
